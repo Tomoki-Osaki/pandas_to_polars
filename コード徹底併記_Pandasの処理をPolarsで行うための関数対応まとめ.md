@@ -670,7 +670,7 @@ df_pd.drop(columns=["性別"])
 
 ```python
 # polars
-df_pl.select(pl.exclude("列"))
+df_pl.drop(pl.col("性別"))
 
 # [out]
 shape: (10_000, 7)
@@ -710,16 +710,15 @@ DataFrame.drop(
 """
 ```
 
-### [polars.exclude](https://docs.pola.rs/api/python/dev/reference/expressions/api/polars.exclude.html)
+### [polars.DataFrame.drop](https://docs.pola.rs/api/python/dev/reference/dataframe/api/polars.DataFrame.drop.html)
 ```python
-polars.exclude(
-    columns: str | polarsDataType | Collection[str] | Collection[polarsDataType],
-    *more_columns: str | polarsDataType,
-) → Expr
-"""
-指定された列を除く、すべての列を表現する。
+DataFrame.drop(
+    *columns: ColumnNameOrSelector | Iterable[ColumnNameOrSelector],
+    strict: bool = True,
+) → DataFrame
 
-pl.all().exclude(columns) を実行するためのシンタックスシュガー（構文糖衣）。
+"""
+データフレームから列を削除する。
 """
 ```
 
