@@ -9,5 +9,4 @@ https://note.com/tomosub/n/n2265b4071a61
 https://www.ac-illust.com/main/detail.php?id=26719119
 
 イラスト素材：しろくまにマッサージしてもらうパンダ
-
 作者：NORIMA
